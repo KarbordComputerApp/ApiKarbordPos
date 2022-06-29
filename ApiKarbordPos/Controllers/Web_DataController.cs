@@ -184,7 +184,7 @@ namespace ApiKarbordPos.Controllers
             RegistryKey OurKey = Registry.CurrentUser;
             OurKey = OurKey.OpenSubKey(@"Software\Karbord\Pos\", true);
 
-
+            
 
             List<PosListObject> list = new List<PosListObject>();
 
@@ -211,6 +211,7 @@ namespace ApiKarbordPos.Controllers
                 list.Add(item);
             }
             return Ok(list);
+
         }
 
 
